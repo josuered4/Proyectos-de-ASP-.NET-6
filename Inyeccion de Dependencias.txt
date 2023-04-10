@@ -1,0 +1,14 @@
+Inyeccion de Dependencias.
+Se tratar de delegar la instanciacion de nuestras clases a 
+otras clases 
+
+Clase1 -> Clase2 //Clase 1 intancia un objeto de clase2
+
+Clase1(Clase2 obj) //pasamos un objeto ya creado de clase dos, 
+por el contructor
+
+Se trata de que la clase, no dependa directamente creando una
+intancia, sino usando ya un objeto, que sera pasado por otra 
+clase, cuando la clase dependiente sea instanciada 
+
+Y asi poder tener centralizadas las instanciaciones 

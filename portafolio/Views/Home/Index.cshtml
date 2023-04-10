@@ -1,8 +1,13 @@
-﻿@{
+﻿@model HomeIndex
+@{
     ViewData["Title"] = "Home Page";
+
+    string HelloWord() => "Hola Mundo";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<partial name="_Presentacion" />
+
+<partial name="_Habilidades" />
+
+<partial name="_SeccionProyectos" model="Model.Proyectos" />
+<!--Asi pasamos un argumento desde una vista parcial-->

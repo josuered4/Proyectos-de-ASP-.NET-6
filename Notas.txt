@@ -1,0 +1,38 @@
+Al dar clic en el nombre de algun proyecto .net
+se nos mostrara la configuracion de los cssproj
+
+-Connected Services, es para conectar poryectos 
+a nuestro proyecto.
+
+-Dependencies.
+	Dependencias de nuestros proyectos, en
+este lugar se instalarn los paquetes de nuget 
+que utilizemos.
+
+-Properties.
+	Propiedades del proyecto, como la direccion, 
+el puerto, variables de ambiente, y tambien varios
+perfiles como son desarrollo o servidor iis
+
+-wwwroot 
+	Tenemos archivos estaticos, como son aquellos
+relacionados con el diseño, como css, js, etc.
+Tambien tenemos librerias como lo que son booctrap, jquery
+
+-controller
+	Logica de programacon
+
+-Models
+	Diseño de los tipos de datos a usar 
+
+-Views
+	Vistas del proyecto 
+
+-Appsetting.json
+	appsetting.Develpment.json
+	Mismo archivo pero usado en entornos de produccion y desarrollo
+son datos de condifuracion, se indica el suao desde el properties/launchSettings.json
+
+-Program
+	la pieza sentrar del proyecto, se configura los servicios como los
+miderwares, la reglas de ruteo.

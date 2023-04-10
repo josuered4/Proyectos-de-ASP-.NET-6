@@ -1,0 +1,27 @@
+﻿#foto {
+    width: 200px;
+    margin: 2rem 0;
+    border-radius: 50%;
+}
+
+#Welcome {
+    background: rgb(0,123,255);
+}
+
+.seccion-bienvenida{
+    margin: 5rem 0 10rem 0;
+    color: white;
+}
+
+.seccion-bienvenida h1{
+    margin-bottom: 1rem;
+}
+
+.seccion-bienvenida p {
+    font-family: sans-serif;
+    line-height: 1.5;
+    font-size: 1.25rem;
+}
+#background-foto{
+    width: 500px;
+}

@@ -1,0 +1,8 @@
+La condiguración del Layout "pag padre de diseño"
+la podremos encontrar en "_ViewStart.cshtml", 
+hay encontraremos el nombre de la pag que usemos 
+como "Layout" que usualmente es "_Layout.cshtml".
+
+- _Layout.cshtml 
+Tenemos el diseño que sera compoartido entre las
+demas paginas.
