@@ -1,0 +1,13 @@
+Provedores de Configuracion.
+
+Nos permite tener datos de conf sin tenerlos en codigo duro en nuestro codigo
+podremos tener una configuracion de produccion y de desarrollo.
+
+Esto lo tenemos en el documento de appseting y appseting.Develpment 
+
+Notros podremos acceder a esta informacion desde cualquier parte del 
+poryecto, aunque no se si sea lo mas seguro, pero lo podemos hacer con
+IConfiguration.
+
+
+

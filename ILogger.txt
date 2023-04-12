@@ -1,0 +1,43 @@
+ILogger
+Es un servicio preconfigurado que nos ayuda a escribir mensajes en logs
+por ejemplos en consola.
+
+Cuando entramos a los controladores, se inyecta solo en el contructor
+de la clase, pero requiere la clase que lo implementa, por eso 
+le pasamos la misma clase 
+
+ _logger.LogInformation("Este es un mensaje de log");
+
+al usarlo de la forma anterior, dentro de un controlador, se nos 
+mostrar el mensaje junto al nombre de la clase, para saber de 
+donde viene el mensaje.
+
+PRIORIDAD DE LOS MENSAJES.
+ILogger puede clasificar los mensaje en 6 categorias.
+	Critical
+	Error
+	Warning 
+	Informtacion
+	Debug
+	Trace
+La cofiguracion se define en el appsetting.
+
+En appsetting de define el que mensajes podran ser usados
+por default, pero si quiero que una clase o un name espase 
+no lo implemente lo debemos espeficiar en el appsetting 
+
+"Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "portafolio.Controller": "Error", -> espacio de nombres 
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+
+"Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "portafolio.Controller.HomeController": "Error", -> clase
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },

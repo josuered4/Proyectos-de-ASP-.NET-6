@@ -11,3 +11,25 @@
 
 <partial name="_SeccionProyectos" model="Model.Proyectos" />
 <!--Asi pasamos un argumento desde una vista parcial-->
+
+<h2>Ejemplo 1</h2>
+<div>
+    Servicio Transitorio <b style="color: red">@Model.serviceExample.ServiceTransient</b>
+</div>
+<div>
+    Servicio Delimitado <b style="color: green">@Model.serviceExample.ServiceScoped</b>
+</div>
+<div>
+    Servicio Unico <b style="color: blue">@Model.serviceExample.ServiceSingleTon</b>
+</div>
+
+<h2>Ejemplo 2</h2>
+<div>
+    Servicio Transitorio <b style="color: red">@Model.serviceExample2.ServiceTransient</b>
+</div>
+<div>
+    Servicio Delimitado <b style="color: green">@Model.serviceExample2.ServiceScoped</b>
+</div>
+<div>
+    Servicio Unico <b style="color: blue">@Model.serviceExample2.ServiceSingleTon</b>
+</div>

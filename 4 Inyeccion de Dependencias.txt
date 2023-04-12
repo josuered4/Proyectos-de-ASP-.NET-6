@@ -1,0 +1,15 @@
+En program repositorio es donde tambien se realiza la inyeccion de dependencias
+
+No todos los servicios son iguales "Servicios", son clases o Interfaces que
+tenemos registradas en el sistema de inyeccion de dependencias.
+
+"AddTransient" que pertenece a servicios, son servicios que viven menos tiempo,
+en cada clase que utilize este servicio se le da una instancia nueva
+
+"AddScoped" : tiempo de vida delimitado por la peticion http, en cada peticion 
+se da una instancia nueva
+
+"singleton": una sola intancia del servio.
+
+En ocaciones los servicios se requiere pasar datos entre servicos o instancias 
+de servicios, y para eso utilizaremos los "add".
