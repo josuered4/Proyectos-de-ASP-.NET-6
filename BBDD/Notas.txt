@@ -1,0 +1,32 @@
+Sintaxis de SQL Server
+
+//Creacion de tabla.
+create table Transactions (
+	Id int not null identity primary key, 
+	Name nvarchar(450) not null
+);
+
+//Insercion de datos y orden de datos.
+insert into Transactions (Name) Values ( 'Josue Reyes');
+
+//o varios registros.
+insert into Transactions (Name) Values ( 'Josue Reyes'), ('Isaac Perez');
+
+
+//Relaciones
+CREATE TABLE TypeAccount
+(
+	Id INT PRIMARY KEY NOT NULL IDENTITY, 
+	Name NVARCHAR(50) NOT NULL, 
+	UserId INT NOT NULL,
+	OrderAccount INT NOT NULL
+)
+
+CREATE TABLE Account
+(
+	Id INT NOT NULL PRIMARY KEY IDENTITY, 
+	Name NVARCHAR(50) NOT NULL, 
+	TypeAccount int FOREIGN KEY REFERENCES TypeAccount (Id), 
+	Balance DECIMAL(18,2) not NULL, 
+	Description NVARCHAR(1000) NULL
+)

@@ -1,7 +1,11 @@
+using BudgetManagement.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddTransient<ITypeAccountRepository, TypeAccountRepository>(); //insertamos dependencias 
+builder.Services.AddTransient<IUserService, UserService>();
 
 var app = builder.Build();
 
